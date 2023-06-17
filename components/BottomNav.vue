@@ -41,25 +41,11 @@ export default {
           iconFill: 'gift'
         },
         {
-          label: 'Pay',
+          label: 'Upload',
           path: '/pay',
           name: 'pay',
           icon: 'camera-outline',
           iconFill: 'camera'
-        },
-        {
-          label: 'Donation',
-          path: '/donation',
-          name: 'donation',
-          icon: 'star-outline',
-          iconFill: 'star'
-        },
-        {
-          label: 'Account',
-          path: '/account',
-          name: 'account',
-          icon: 'person-outline',
-          iconFill: 'person'
         }
       ]
     }

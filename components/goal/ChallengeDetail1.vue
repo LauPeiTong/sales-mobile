@@ -19,7 +19,6 @@
                 v-img(v-if="item.img" :src="img(item.img)" :style="getImgWidth")
                 p.pt-5.mb-0.font-weight-bold.subtitle-1.secondary--text.text-justify {{ $strLimit(item.challenge, 300) }}
                 p.pt-2.mb-0.font-weight-regular.subtitle-2.secondary--text.text-justify {{ $strLimit(item.content, 300) }}
-                p.pt-5.mb-0.font-weight-regular.subtitle-4.secondary--text.text-justify {{ $strLimit(item.information, 300) }}
           v-card-actions.px-4.pt-0
   v-card.v-card.rounded-xl.d-flex.flex-column.justify-start(
           @click=""
@@ -30,7 +29,7 @@
             v-row
               v-col
                 p.pt-2.mb-0.font-weight-bold.subtitle-2.secondary--text.text-justify {{ $strLimit("Terms and condition: ", 300) }}
-                p.pt-2.mb-0.font-weight-regular.subtitle-2.secondary--text.text-justify {{ $strLimit("1. TECoPAY reserves right to change/cancel terms and conditions of this challenge at any time.", 300) }}
+                p.pt-2.mb-0.font-weight-regular.subtitle-2.secondary--text.text-justify {{ $strLimit("1. Seedify reserves right to change/cancel terms and conditions of this challenge at any time.", 300) }}
                 p.pt-2.mb-0.font-weight-regular.subtitle-2.secondary--text.text-justify {{ $strLimit("2. You may enter multiple challenges at a time.", 300) }}
 </template>
 
@@ -62,10 +61,9 @@ export default {
         {
           id: 2,
           title: '(30 points)',
-          img: 'carbon',
-          challenge: 'Take a Challenge',
-          content: 'Reduce monthly Carbon Footprint by 20%',
-          information: 'Take a challenge to show that have taken ncessary steps to reduce carbon footprint when makeing digital payment.'
+          img: 'challenge2',
+          challenge: 'Sales Volume Challenge',
+          content: 'Increase Sales Volume by 10%'
         }
         // {
         //   id: 3,

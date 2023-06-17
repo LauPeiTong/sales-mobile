@@ -1,11 +1,18 @@
 <template lang="pug">
 .fill-height.goal-page.pa-0.ma-0
   v-row.pa-0.ma-0.upper-row
-    upper-title.ma-0(:title="'GoGreen Challenge'" :icon="'more-vertical'" @goBack="goBackToPreviousPage" :back="true")
+    upper-title.ma-0(:title="'Sales Volume Challenge'" :icon="'more-vertical'" @goBack="goBackToPreviousPage" :back="true")
   .scroll.scrollbar-hide.ma-0.justify-top.align-center(:style="scrollSize")
     ChallengeDetail1()
     v-row.px-6.pt-2
-      f-button(:label = "'Accept Challenge'" @click="Accepted()")
+      v-progress-linear.rounded-xl(
+        :value="67.5"
+        :color="$vuetify.theme.themes.light.green"
+        height="30"
+      )
+        template(v-slot:default="{ value }")
+          strong.white--text {{ Math.ceil(value) }}% progress
+      //- f-button(:label = "'Accept Challenge'" @click="Accepted()")
 </template>
 
 <script>

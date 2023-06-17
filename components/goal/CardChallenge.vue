@@ -73,27 +73,27 @@ export default {
         {
           id: 1,
           title: '(50 points)',
-          img: 'donation',
-          challenge: 'Donation Challenge',
-          content: 'Make a donation of RM 50 to Environmental NGO',
+          img: 'challenge1',
+          challenge: 'Rent Challenge',
+          content: 'Find 20 new rents and above per month',
           accept: 'Completed',
           point: 50
         },
         {
           id: 2,
           title: '(30 points)',
-          img: 'carbon',
-          challenge: 'Carbon Footprint Challenge',
-          content: 'Reduce monthly Carbon Footprint by 20%',
+          img: 'challenge2',
+          challenge: 'Sales Volume Challenge',
+          content: 'Increase Sales Volume by 10%',
           accept: 'In Progress',
           point: 30
         },
         {
           id: 3,
           title: '(30 points)',
-          img: 'receipt',
-          challenge: 'No Plastic Bag Challenge',
-          content: 'Do not request for plastic bag when purchasing goods for one month',
+          img: 'challenge3',
+          challenge: 'Customer Rating Challenge',
+          content: 'Improve Customer Rating by 10%',
           accept: 'In Progress',
           point: 30
         }

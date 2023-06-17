@@ -6,7 +6,7 @@
         v-list-item-avatar(size="60" tile)
           v-img(:src="coins")
         v-list-item-content
-          v-list-item-title.secondary--text.font-weight-medium.text-h6.mt-2 Total Teco Points:
+          v-list-item-title.secondary--text.font-weight-medium.text-h6.mt-2 Total Seed Points:
           v-list-item-subtitle.font-weight-bold.text-h4.primary--text {{ points }}
     v-list-item.mx-2
       v-list-item-title.font-weight-medium.text-h6

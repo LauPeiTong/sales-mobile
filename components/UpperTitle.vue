@@ -8,7 +8,7 @@ v-row.pt-8.pb-6.upper-title(dense :class="titleClass")
         @click="emitBack()"
       )
     v-col.text-center(:cols="8")
-      v-img(v-if="isLogo" :src="logo" height="40" contain)
+      v-img(v-if="isLogo" :src="logo" height="60"  contain)
       h3(v-else :class="textColor") {{ title }}
     v-col.text-center(:cols="2")
       f-icon(
@@ -61,7 +61,7 @@ export default {
   },
   data () {
     return {
-      logo: require('../assets/logo/TEcoPay.png')
+      logo: require('../assets/logo/seedify.png')
     }
   },
   computed: {

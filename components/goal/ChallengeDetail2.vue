@@ -19,7 +19,6 @@
                 v-img(v-if="item.img" :src="img(item.img)" :style="getImgWidth")
                 p.pt-5.mb-0.font-weight-bold.subtitle-1.secondary--text.text-justify {{ $strLimit(item.challenge, 300) }}
                 p.pt-2.mb-0.font-weight-regular.subtitle-2.secondary--text.text-justify {{ $strLimit(item.content, 300) }}
-                p.pt-5.mb-0.font-weight-regular.subtitle-4.secondary--text.text-justify {{ $strLimit(item.information, 300) }}
           v-card-actions.px-4.pt-0
   v-card.v-card.rounded-xl.d-flex.flex-column.justify-start(
           @click=""
@@ -30,7 +29,7 @@
             v-row
               v-col
                 p.pt-2.mb-0.font-weight-bold.subtitle-2.secondary--text.text-justify {{ $strLimit("Terms and condition: ", 300) }}
-                p.pt-2.mb-0.font-weight-regular.subtitle-2.secondary--text.text-justify {{ $strLimit("1. TECoPAY reserves right to change/cancel terms and conditions of this challenge at any time.", 300) }}
+                p.pt-2.mb-0.font-weight-regular.subtitle-2.secondary--text.text-justify {{ $strLimit("1. Seedify reserves right to change/cancel terms and conditions of this challenge at any time.", 300) }}
                 p.pt-2.mb-0.font-weight-regular.subtitle-2.secondary--text.text-justify {{ $strLimit("2. You may enter multiple challenges at a time.", 300) }}
 </template>
 
@@ -70,10 +69,9 @@ export default {
         {
           id: 3,
           title: '(30 points)',
-          img: 'receipt',
-          challenge: 'Daily Challenge',
-          content: 'Do not request for plastic bags for one month',
-          information: 'You play a vital role in reducing the use of plastic bags to save the environment.'
+          img: 'challenge3',
+          challenge: 'Customer Rating Challenge',
+          content: 'Improve Customer Rating by 10%'
         }
 
         // {

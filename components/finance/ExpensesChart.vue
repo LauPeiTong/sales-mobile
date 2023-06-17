@@ -10,10 +10,9 @@
             v-list-item-title.secondary--text.font-weight-bold.text-h5.mt-2 {{ months[selectedIndex] }}
           v-col.pb-0.text-left.align-bottom(align-self="end")
             f-icon(:icon-name="'arrow-ios-forward-outline'" :icon-fill="$vuetify.theme.themes.light.primary" @click="selectNextMonth")
-        v-list-item-subtitle.subtitle-1.darkGrey--text Monthly CO2 Emission
+        v-list-item-subtitle.subtitle-1.darkGrey--text Monthly Net Sales
         ApexCharts.d-flex.justify-space-around(type="donut" :options="chartOptions" :series="series[this.selectedIndex]" width="320" height="320")
-        v-list-item-title.secondary-text.text-h6.ml-2.mt-2.mb-2.text-center Ave monthly carbon footprint
-        v-list-item-subtitle.text-h6.ml-3.primary--text.text-center  781 kg CO2
+        v-list-item-title.secondary-text.text-h6.ml-2.mt-2.mb-2.text-center Net Sales
 </template>
 
 <script>
@@ -31,7 +30,7 @@ export default {
     return {
       selectedIndex: 1,
       months: ['2023 Apr', '2023 May', '2023 June'],
-      series: [[100, 200, 300], [175.5, 350, 340], [200, 400, 100]],
+      series: [[10000, 20000], [17550, 35000], [20000, 40000]],
       chartOptions: {
         chart: {
           type: 'donut'
@@ -39,8 +38,8 @@ export default {
         legend: {
           show: false
         },
-        labels: ['Food', 'Transport', 'Product'],
-        colors: ['#237ABC', '#3BB04A', '#F49022'],
+        labels: ['Expenses', 'Sales'],
+        colors: ['#FF0000', '#237ABC'],
         plotOptions: {
           pie: {
             expandOnClick: true,
@@ -54,8 +53,8 @@ export default {
                   fontSize: '20px',
                   fontWeight: '600',
                   formatter: function (value) {
-                    const t = value.globals.series.reduce((a, b) => a + b, 0)
-                    return t.toString() + ' kg CO2'
+                    const t = value.globals.series.reduce((a, b) => b - a, 0)
+                    return 'RM ' + t.toString()
                   }
                 },
                 value: {
@@ -91,7 +90,7 @@ export default {
   },
   methods: {
     getData () {
-      return [[100, 200, 300], [175.5, 350, 340], [200, 400, 100]]
+      return [[10000, 20000], [17550, 35000], [20000, 40000]]
     },
     setData (selectedIndex) {
       this.selectedData = this.selectedIndex
