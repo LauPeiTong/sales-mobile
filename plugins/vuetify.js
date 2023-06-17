@@ -6,18 +6,18 @@ export default new Vuetify({
     dark: false,
     themes: {
       light: {
-        primary: '#237ABC', // blue
+        primary: '#4C5175', // purple
         secondary: '#333333', // black
-        tertiary: '#035172', // dark blue
-        danger: '#C82F2F', // red
+        tertiary: '#BCE7D9', // light green
+        danger: '#FF6B6C', // red
         darkGrey: '#848484',
         lightGrey: '#C1C1C1',
         warning: '#BB0000', // red
-        success: '#FEB81E', // yellow
+        success: '#FFC145', // yellow
         brown: '#918679',
-        green: '#3BB04A',
-        orange: '#F49022',
-        lightBlue: '#E3F2FD'
+        green: '#3d9970',
+        blue: '#1890FF',
+        darkBlue: '#314760'
       }
     }
   }

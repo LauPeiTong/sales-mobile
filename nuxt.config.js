@@ -9,8 +9,8 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    titleTemplate: '%s - App for digital payment and environment',
-    title: 'TEcoPay',
+    titleTemplate: '%s - App for sale and performance',
+    title: 'Seedify',
     htmlAttrs: {
       lang: 'en'
     },
@@ -21,7 +21,7 @@ export default {
       { name: 'format-detection', content: 'telephone=no' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/tecopayLogo.png' }
+      { rel: 'icon', type: 'image/x-icon', href: '/seedify.png' }
     ]
   },
 
