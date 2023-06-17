@@ -42,7 +42,7 @@ export default {
         },
         {
           label: 'Upload',
-          path: '/pay',
+          path: '/uploadpic',
           name: 'pay',
           icon: 'camera-outline',
           iconFill: 'camera'
