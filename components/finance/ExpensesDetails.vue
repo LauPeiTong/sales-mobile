@@ -45,7 +45,7 @@ export default {
   },
   data () {
     return {
-      selectedIndex: 1
+      selectedIndex: 2
     }
   },
   computed: {
