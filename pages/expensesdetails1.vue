@@ -2,7 +2,7 @@
 .fill-height.expenses-page.pa-0.ma-0
   v-row.pa-0.ma-0.upper-row
     upper-title.ma-0(
-      :title="category.name"
+      :title="'Expenses'"
       :icon="'credit-card-outline'"
       :rightIconColor="$vuetify.theme.themes.light.primary"
       @clicked=""

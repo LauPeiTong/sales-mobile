@@ -30,7 +30,7 @@ export default {
     return {
       selectedIndex: 1,
       months: ['2023 Apr', '2023 May', '2023 June'],
-      series: [[10000, 20000], [17550, 35000], [20000, 40000]],
+      series: [[1000, 20000], [3000, 35000], [2000, 40000]],
       chartOptions: {
         chart: {
           type: 'donut'
@@ -90,7 +90,7 @@ export default {
   },
   methods: {
     getData () {
-      return [[10000, 20000], [17550, 35000], [20000, 40000]]
+      return [[1000, 20000], [3000, 35000], [2000, 40000]]
     },
     setData (selectedIndex) {
       this.selectedData = this.selectedIndex

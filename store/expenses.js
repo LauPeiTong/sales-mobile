@@ -2,7 +2,7 @@ export const state = () => ({
   currentCategory: null,
   categories: [
     { id: 0, name: 'Sales', icon: 'trending-up-outline', color: '#237ABC', amount: 35000, colorName: 'green', img: 'Food' },
-    { id: 1, name: 'Expenses', icon: 'trending-down-outline', color: '#FF0000', amount: 17550, colorName: 'primary', img: 'Car' }
+    { id: 1, name: 'Expenses', icon: 'trending-down-outline', color: '#FF0000', amount: 3000, colorName: 'primary', img: 'Car' }
   ],
   expenses: [
     { id: 0, name: 'GrabPay-EC', amount: 1500, category: 0 },
@@ -33,9 +33,8 @@ export const state = () => ({
     { id: 11, name: 'ShopeePay Malaysia', amount: 1500, category: 3 }
   ],
   food: [
-    { id: 0, name: 'GrabFood', percentage: 20 },
-    { id: 1, name: 'Cafe & Restaurant', percentage: 10 },
-    { id: 2, name: 'ShopeeFood', percentage: 20 },
+    { id: 0, name: 'Food', percentage: 30 },
+    { id: 1, name: 'Accomodation', percentage: 30 },
     { id: 3, name: 'Petrol', percentage: 40 }
   ],
   housing: [

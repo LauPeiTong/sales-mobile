@@ -10,21 +10,17 @@
       :back="true")
   .scroll.scrollbar-hide.ma-0.justify-top.align-center(:style="scrollSize")
     expenses-details.pb-2(:items="getItems")
-    // expenses-history
+    //- expenses-history
 </template>
-
 <script>
 import { mapGetters } from 'vuex'
-
 import UpperTitle from '../components/UpperTitle.vue'
 import ExpensesDetails from '../components/finance/ExpensesDetails.vue'
-// import ExpensesHistory from '../components/finance/ExpensesHistory.vue'
 export default {
   name: 'ExpensesPage',
   components: {
     UpperTitle,
     ExpensesDetails
-    // ExpensesHistory
   },
   layout: 'welcome',
   data () {
