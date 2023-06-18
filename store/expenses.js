@@ -1,8 +1,8 @@
 export const state = () => ({
   currentCategory: null,
   categories: [
-    { id: 0, name: 'Sales', icon: 'shopping-cart-outline', color: '#237ABC', amount: 35000, colorName: 'green', img: 'Food' },
-    { id: 1, name: 'Expenses', icon: 'car-outline', color: '#FF0000', amount: 17550, colorName: 'primary', img: 'Car' }
+    { id: 0, name: 'Sales', icon: 'trending-up-outline', color: '#237ABC', amount: 35000, colorName: 'green', img: 'Food' },
+    { id: 1, name: 'Expenses', icon: 'trending-down-outline', color: '#FF0000', amount: 17550, colorName: 'primary', img: 'Car' }
   ],
   expenses: [
     { id: 0, name: 'GrabPay-EC', amount: 1500, category: 0 },
